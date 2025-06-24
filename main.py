@@ -12,7 +12,7 @@ openai.api_key = OPENAI_API_KEY
 
 # ===== GOOGLE SHEETS SETUP =====
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name("studentbot-463913-2b13759b4fa7.json", scope)
 client = gspread.authorize(creds)
 sheet = client.open(GOOGLE_SHEET_NAME).sheet1
 
